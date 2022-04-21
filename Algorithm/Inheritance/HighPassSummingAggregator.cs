@@ -16,7 +16,7 @@ namespace Algorithm.Inheritance
 
         protected override IEnumerable<Measurement> FilterMeasurements(IEnumerable<Measurement> measurements)
         {
-            return measurements.Where(m => m.X >= 5 && m.Y >= 5);
+            return measurements.Where(m => m.X > 2 && m.Y > 2);
         }
     }
 }
